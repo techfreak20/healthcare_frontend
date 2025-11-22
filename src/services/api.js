@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Connect to your local backend (or cloud URL later)
 const API = axios.create({
-  baseURL: 'http://localhost:8080/api', 
+  baseURL: 'https://hcltech-healthcare-oyya.vercel.app/api', 
   headers: {
     'Content-Type': 'application/json',
   },
