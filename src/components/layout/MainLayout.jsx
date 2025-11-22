@@ -1,7 +1,7 @@
 import Sidebar from './Sidebar';
 import MobileNav from './MobileNav'; 
 
-const MainLayout = ({ children }) => {
+const Mainlayout = ({ children }) => {
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar (Desktop) */}
@@ -21,4 +21,4 @@ const MainLayout = ({ children }) => {
   );
 };
 
-export default MainLayout;
+export default Mainlayout;
