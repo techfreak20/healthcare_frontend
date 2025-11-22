@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MainLayout from '../components/layout/Mainlayout';
+import Mainlayout from '../components/layout/Mainlayout';
 import API from '../services/api';
 import { toast } from 'react-toastify';
 import { User, Calendar, Droplet, Ruler, Weight, CheckCircle } from 'lucide-react';
@@ -27,16 +27,16 @@ const Profile = () => {
 
   if (loading) {
     return (
-      <MainLayout>
+      <Mainlayout>
         <div className="flex justify-center items-center h-64">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
         </div>
-      </MainLayout>
+      </Mainlayout>
     );
   }
 
   return (
-    <MainLayout>
+    <Mainlayout>
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900">My Profile</h1>
@@ -77,7 +77,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-    </MainLayout>
+    </Mainlayout>
   );
 };
 

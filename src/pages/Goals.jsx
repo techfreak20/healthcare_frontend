@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MainLayout from '../components/layout/Mainlayout';
+import Mainlayout from '../components/layout/Mainlayout';
 import API from '../services/api';
 import { toast } from 'react-toastify';
 import { Target, Footprints, Flame, Moon, Edit2, Plus, Trash2, CheckCircle, Circle } from 'lucide-react';
@@ -96,7 +96,7 @@ const Goals = () => {
   if (loading) return <MainLayout><div className="p-10 text-center">Loading Goals...</div></MainLayout>;
 
   return (
-    <MainLayout>
+    <Mainlayout>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
             <Target className="text-primary"/> Wellness Targets
@@ -222,7 +222,7 @@ const Goals = () => {
         </div>
 
       </div>
-    </MainLayout>
+    </Mainlayout>
   );
 };
 

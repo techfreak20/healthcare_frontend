@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import API from '../services/api';
-import MainLayout from '../components/layout/Mainlayout';
+import Mainlayout from '../components/layout/Mainlayout';
 import { Footprints, Flame, Moon, Calendar, ChevronRight, Droplets } from 'lucide-react';
 
 const Dashboard = () => {
@@ -28,11 +28,11 @@ const Dashboard = () => {
 
   if (loading) {
     return (
-      <MainLayout>
+      <Mainlayout>
         <div className="flex items-center justify-center h-full">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
         </div>
-      </MainLayout>
+      </Mainlayout>
     );
   }
 
@@ -43,7 +43,7 @@ const Dashboard = () => {
   const stepsPercent = Math.min(Math.round((steps?.current / steps?.target) * 100), 100);
 
   return (
-    <MainLayout>
+    <Mainlayout>
       {/* Header Section */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Welcome back, {user?.name.split(' ')[0]} 👋</h1>
@@ -181,7 +181,7 @@ const Dashboard = () => {
 
         </div>
       </div>
-    </MainLayout>
+    </Mainlayout>
   );
 };
 

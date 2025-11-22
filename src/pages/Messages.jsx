@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MainLayout from '../components/layout/Mainlayout';
+import Mainlayout from '../components/layout/Mainlayout';
 import { Search, Send, Phone, Video, MoreVertical, Circle } from 'lucide-react';
 
 const Messages = () => {
@@ -27,7 +27,7 @@ const Messages = () => {
   };
 
   return (
-    <MainLayout>
+    <Mainlayout>
       <div className="h-[calc(100vh-140px)] bg-white rounded-2xl shadow-sm border border-gray-200 flex overflow-hidden">
         
         {/* Contacts Sidebar */}
@@ -116,7 +116,7 @@ const Messages = () => {
           </div>
         </div>
       </div>
-    </MainLayout>
+    </Mainlayout>
   );
 };
 
